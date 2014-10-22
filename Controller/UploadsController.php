@@ -25,7 +25,7 @@ class UploadsController extends NeatUploaderAppController {
 
     public function admin_uploader($ref){
     	$this->layout = false;
-    	$this->set("ref",$ref):
+    	$this->set("ref",$ref);
     	$this->render("uploader");
     }
 }
