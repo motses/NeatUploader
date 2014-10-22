@@ -4,7 +4,7 @@ class NeatUploaderHelper extends AppHelper{
 
 	public function init(){
 		$toreturn = $this->Html->css("/neat_uploader/css/uploader/neat-little-uploader.css",array("plugin" => true));
-		$toreturn.= $this->Html->script("neat_uploader/js/uploader/neat-little-uploader.js",array("plugin" => true));
+		$toreturn.= $this->Html->script("/neat_uploader/js/uploader/neat-little-uploader.js",array("plugin" => true));
 		return $toreturn;
 	}
 
