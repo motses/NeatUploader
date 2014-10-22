@@ -22,4 +22,10 @@ class UploadsController extends NeatUploaderAppController {
 		  return new CakeResponse(array("body" => json_encode(array('success' => 0, 'error' => 'error writing file')),"type" => "json"));
 		}
     }
+
+    public function admin_uploader($ref){
+    	$this->layout = false;
+    	$this->set("ref",$ref):
+    	$this->render("uploader");
+    }
 }

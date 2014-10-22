@@ -14,7 +14,16 @@ Installation
 
 **Note:** this is a working (and tested) plugin for CakePhp 2.9+
 
-1. Pop the contents of the repo into your plugin directory ("/app/plugin").
+1. Pop the contents of the repo into your plugin directory ("/app/plugin") in a folder called *NeatUploader*.
+
+**OR**
+
+1. Add submodule to your project, go to your *app/Plugin* directory, then type:
+
+    ```bash
+    git submodule add https://github.com/motses/NeatUploader.git NeatUploader
+    ```
+
 2. Make sure you end up with an *uploads* folder with the appropriate write permissions in the webroot folders for files ("/app/webroot/files/").
 3. Declare your plugin in Cakephp's bootstrap file 
 
@@ -27,7 +36,7 @@ Installation
     public $helpers = array("NeatUploader.NeatUploader");    
     ```
 
-5. Create the datatable *documents* for the Document model (where you are going to store original filenames and actual filename with columns:
+5. Create the datatable *uploads* for the Document model (where you are going to store original filenames and actual filename with columns:
 
  id *int(11)*
  ref *varchar(255)*
